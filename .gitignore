@@ -1,2 +1,3 @@
 db/postgres
 .idea
+go.sum
