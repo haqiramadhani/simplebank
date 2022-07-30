@@ -1,5 +1,5 @@
 ### Create an account
-POST http://localhost:8080/accounts
+POST http://127.0.0.1:8080/accounts
 Content-Type: application/json
 
 {
@@ -11,4 +11,15 @@ Content-Type: application/json
 GET http://localhost:8080/accounts/1
 
 ### Get list accounts
-GET http://localhost:8080/accounts?page_id=100&page_size=5
+GET http://localhost:8080/accounts?page_id=1&page_size=5
+
+### Create new transfer
+POST http://localhost:8080/transfers
+Content-Type: application/json
+
+{
+  "from_account_id": 1,
+  "to_account_id": 3,
+  "amount": 1,
+  "currency": "USD"
+}
